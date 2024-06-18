@@ -1,4 +1,5 @@
 <span class="line1">Sigma</span>
+<br>
 <span class="line2">Jello</span>
 
 <style lang="scss">
@@ -19,7 +20,6 @@
         font-size: 25px;
         //background-color: black;
         align-self: flex-start;
-        padding-right: 1915px;
         //text-shadow: 0px 0px 20px rgba(black, 1);
     }
 </style>
