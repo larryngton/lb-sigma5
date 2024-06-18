@@ -234,6 +234,36 @@
       ]
     },
     {
+      "name": "TargetHud",
+      "value": [
+        {
+          "name": "Enabled",
+          "value": true
+        },
+        {
+          "name": "Alignment",
+          "value": [
+            {
+              "name": "Horizontal",
+              "value": "CenterTranslated"
+            },
+            {
+              "name": "HorizontalOffset",
+              "value": 0
+            },
+            {
+              "name": "Vertical",
+              "value": "Center"
+            },
+            {
+              "name": "VerticalOffset",
+              "value": 200
+            }
+          ]
+        }
+      ]
+    },
+    {
       "name": "Keystrokes",
       "value": [
         {
