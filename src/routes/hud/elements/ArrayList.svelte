@@ -15,8 +15,8 @@
             .filter((m) => m.enabled && !m.hidden)
             .sort(
                 (a, b) =>
-                    getTextWidth($spaceSeperatedNames ? convertToSpacedString(b.name) : b.name, "500 14px Inter") -
-                    getTextWidth($spaceSeperatedNames ? convertToSpacedString(a.name) : a.name, "500 14px Inter"),
+                    getTextWidth($spaceSeperatedNames ? convertToSpacedString(b.name) : b.name, "500 14px Arial") -
+                    getTextWidth($spaceSeperatedNames ? convertToSpacedString(a.name) : a.name, "500 14px Arial"),
             );
     }
 
@@ -39,7 +39,7 @@
 
 <div class="arraylist">
     {#each enabledModules as { name } (name)}
-        <div class="module" animate:flip={{ duration: 200 }} in:fly={{ x: 50, duration: 200 }}>
+        <div class="module">
             {$spaceSeperatedNames ? convertToSpacedString(name) : name}
         </div>
     {/each}
@@ -63,10 +63,8 @@
         padding: 5px 8px;
         //border-left: solid 4px $accent-color;
         width: max-content;
-        //margin-bottom: 10px;
         font-weight: 100;
         margin-left: auto;
-        //box-shadow: 0px 0px 5px 5px rgba(black, 0.5), inset 0px 0px 10px rgba(black, 0.5);
         text-shadow: 0px 0px 20px rgba(black, 1);
     }
 </style>
