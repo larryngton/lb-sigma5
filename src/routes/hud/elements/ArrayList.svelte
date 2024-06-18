@@ -67,6 +67,6 @@
         font-weight: 100;
         margin-left: auto;
         //box-shadow: 0px 0px 5px 5px rgba(black, 0.5), inset 0px 0px 10px rgba(black, 0.5);
-        //text-shadow: 0px 0px 20px rgba(black, 1);
+        text-shadow: 0px 0px 20px rgba(black, 1);
     }
 </style>
