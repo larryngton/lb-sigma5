@@ -36,24 +36,8 @@
             </div>
     
             <div class="name">{target.username}</div>
-            <div class="health-stats">
-                <div class="stat">
-                    <div class="value">{Math.floor(target.actualHealth + target.absorption)}</div>
-                    <img
-                            class="icon"
-                            src="img/hud/targethud/icon-health.svg"
-                            alt="health"
-                    />
-                </div>
-                <div class="stat">
-                    <div class="value">{Math.floor(target.armor)}</div>
-                    <img
-                            class="icon"
-                            src="img/hud/targethud/icon-armor.svg"
-                            alt="armor"
-                    />
-                </div>
-            </div>
+
+
             <div class="armor-stats">
                 {#if target.armorItems[3].count > 0}
                     <ArmorStatus itemStack={target.armorItems[3]} />
@@ -80,10 +64,10 @@
     .targethud {
         //position: fixed;
         //top: 50%;
-        //left: calc(50% + 20px);
+        left: calc(50% + 5px);
         //transform: translateY(-50%); // overwrites the component transform
         background-color: rgba($targethud-base-color, 0.68);
-        border-radius: 5px;
+        border-radius: 2px;
         overflow: hidden;
     }
 
@@ -119,10 +103,11 @@
     }
 
     .armor-stats {
-        grid-area: d;
+        grid-area: c;
         display: flex;
-        align-items: center;
+        align-items: left;
         column-gap: 10px;
+        bottom: 10px;
         padding-left: 5px;
     }
 
@@ -135,7 +120,7 @@
         background-image: url("/img/steve.png");
         background-repeat: no-repeat;
         background-size: cover;
-        border-radius: 5px;
+        border-radius: 0px;
         overflow: hidden;
 
         img {

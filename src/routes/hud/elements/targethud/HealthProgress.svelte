@@ -15,11 +15,16 @@
 
     .health-progress {
         position: relative;
+        bottom: 0px;
+        left: 0px;
+        border-radius: 0px;
+        max-width: 100%;
     }
 
     .thumb {
-        height: 8px;
-        background-color: $hotbar-health-color;
+        height: 14px;
+        background-color: red;
         transition: ease width 0.5s;
+        border-radius: 0px;
     }
 </style>

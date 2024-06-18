@@ -22,7 +22,8 @@
 
     .armor-status {
         display: flex;
-        align-items: center;
+        align-items: left;
+        padding-top: 5px;
         column-gap: 5px;
     }
 
