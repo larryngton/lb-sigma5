@@ -55,14 +55,18 @@
     }
 
     .module {
-        background-color: rgba($arraylist-base-color, 0.68);
+        //background-color: rgba($arraylist-base-color, 0.05);
         color: $arraylist-text-color;
-        font-size: 14px;
-        border-radius: 4px 0 0 4px;
+        //color: black;
+        font-size: 20px;
+        //border-radius: 10px;
         padding: 5px 8px;
-        border-left: solid 4px $accent-color;
+        //border-left: solid 4px $accent-color;
         width: max-content;
-        font-weight: 500;
+        //margin-bottom: 10px;
+        font-weight: 100;
         margin-left: auto;
+        //box-shadow: 0px 0px 5px 5px rgba(black, 0.5), inset 0px 0px 10px rgba(black, 0.5);
+        text-shadow: 0px 0px 20px rgba(black, 1);
     }
 </style>
