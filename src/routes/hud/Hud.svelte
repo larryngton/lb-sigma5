@@ -11,6 +11,7 @@
     import type {Component} from "../../integration/types";
     import type {ComponentsUpdateEvent, ScaleFactorChangeEvent} from "../../integration/events";
     import Keystrokes from "./elements/keystrokes/Keystrokes.svelte";
+    import TargetHud from "./elements/targethud/TargetHud.svelte";
 
     let zoom = 100;
     let components: Component[] = [];
@@ -41,6 +42,8 @@
                     <ArrayList/>
                 {:else if c.name === "TabGui"}
                     <TabGui/>
+                {:else if c.name === "TargetHud"}
+                    <TargetHud/>
                 {:else if c.name === "Notifications"}
                     <Notifications/>
                 {:else if c.name === "Hotbar"}

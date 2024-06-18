@@ -18,11 +18,12 @@
             "a c";
     grid-template-columns: max-content 1fr;
     column-gap: 10px;
-    background: rgba(0, 0, 0, 0.68);
-    border-radius: 5px;
+    background: rgba(34,34,34, 0.9);
     width: 300px;
     overflow: hidden;
     padding: 10px;
+    padding-top: 12px;
+    padding-bottom: 7px;
     margin-bottom: 10px;
   }
 
@@ -37,17 +38,17 @@
     position: relative;
 
     &.success {
-      background-color: #4dac68;
+      background-color: #4dac6800;
       background-image: url("/img/hud/notification/icon-success.svg");
     }
 
     &.error {
-      background-color: #fc4130;
+      background-color: #fc413000;
       background-image: url("/img/hud/notification/icon-error.svg");
     }
 
     &.info {
-      background-color: #4677ff;
+      background-color: #4677ff00;
       background-image: url("/img/hud/notification/icon-info.svg");
     }
 
@@ -69,7 +70,7 @@
     }
 
     &.enabled {
-      background-color: #4dac68;
+      background-color: #4dac6800;
 
       &::after {
         left: 62%;
@@ -77,7 +78,7 @@
     }
 
     &.disabled {
-      background-color: #fc4130;
+      background-color: #fc413000;
 
       &::after {
         left: 38%;
@@ -90,6 +91,7 @@
     font-size: 14px;
     color: white;
     font-weight: 600;
+
   }
 
   .message {
