@@ -1,6 +1,5 @@
 <script lang="ts">
     import ArrayList from "./elements/ArrayList.svelte";
-    import TargetHud from "./elements/targethud/TargetHud.svelte";
     import Watermark from "./elements/Watermark.svelte";
     import Notifications from "./elements/notifications/Notifications.svelte";
     import TabGui from "./elements/tabgui/TabGui.svelte";
@@ -10,10 +9,8 @@
     import {getComponents, getGameWindow} from "../../integration/rest";
     import {listen} from "../../integration/ws";
     import type {Component} from "../../integration/types";
-    import Taco from "./elements/taco/Taco.svelte";
     import type {ComponentsUpdateEvent, ScaleFactorChangeEvent} from "../../integration/events";
     import Keystrokes from "./elements/keystrokes/Keystrokes.svelte";
-    import Effects from "./elements/Effects.svelte";
 
     let zoom = 100;
     let components: Component[] = [];
@@ -46,18 +43,12 @@
                     <TabGui/>
                 {:else if c.name === "Notifications"}
                     <Notifications/>
-                {:else if c.name === "TargetHud"}
-                    <TargetHud/>
                 {:else if c.name === "Hotbar"}
                     <HotBar/>
                 {:else if c.name === "Scoreboard"}
                     <Scoreboard/>
-                {:else if c.name === "Taco"}
-                    <Taco/>
                 {:else if c.name === "Keystrokes"}
                     <Keystrokes/>
-                {:else if c.name === "Effects"}
-                    <Effects />
                 {:else if c.name === "Frame"}
                     {#if c.settings.src.startsWith("http")}
                         <iframe title="" src="{c.settings.src}"
