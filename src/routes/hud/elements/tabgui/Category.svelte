@@ -30,7 +30,7 @@
     @import "../../../../colors.scss";
 
     .name {
-        font-weight: 500;
+        font-weight: 400;
         color: $tabgui-text-color;
         font-size: 14px;
         width: 100%;

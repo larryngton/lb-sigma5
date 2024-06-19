@@ -223,7 +223,7 @@
     .category {
       font-size: 14px;
       color: $clickgui-text-color;
-      font-weight: 500;
+      font-weight: 400;
     }
   }
 

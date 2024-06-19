@@ -43,7 +43,7 @@
   @import "../../../../../colors.scss";
 
   .option {
-    font-weight: 500;
+    font-weight: 400;
     color: $menu-text-dimmed-color;
     font-size: 20px;
     padding: 15px 20px;

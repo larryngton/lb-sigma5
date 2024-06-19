@@ -83,7 +83,7 @@
     .name {
         grid-area: b;
         color: $targethud-text-color;
-        font-weight: 500;
+        font-weight: 400;
         align-self: flex-end;
     }
 

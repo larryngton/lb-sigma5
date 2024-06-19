@@ -228,7 +228,7 @@
     color: $hotbar-text-color;
     font-size: 14px;
     margin: 0 auto 15px;
-    font-weight: 500;
+    font-weight: 400;
     background-color: rgba($hotbar-base-color, .68);
     padding: 5px 8px;
     border-radius: 5px;

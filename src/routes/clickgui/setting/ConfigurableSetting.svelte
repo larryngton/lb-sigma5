@@ -59,7 +59,7 @@
   .title {
     color: $clickgui-text-color;
     font-size: 12px;
-    font-weight: 600;
+    font-weight: 400;
   }
 
   .head {

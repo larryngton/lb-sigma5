@@ -75,7 +75,7 @@
   .name {
     color: $clickgui-text-color;
     font-size: 12px;
-    font-weight: 500;
+    font-weight: 400;
     margin-bottom: 5px;
   }
 

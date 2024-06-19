@@ -33,7 +33,7 @@
     justify-content: center;
     border-radius: 5px;
     font-size: 14px;
-    font-weight: 500;
+    font-weight: 400;
     transition: ease box-shadow .2s;
     position: relative;
     box-shadow: inset 0 0 0 0 $accent-color;

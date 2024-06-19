@@ -29,7 +29,7 @@
   }
 
   .name {
-    font-weight: 500;
+    font-weight: 400;
     color: $clickgui-text-color;
     font-size: 12px;
     margin-bottom: 5px;

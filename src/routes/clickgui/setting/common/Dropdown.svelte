@@ -75,7 +75,7 @@
     transition: ease border-radius .2s;
 
     .text {
-      font-weight: 500;
+      font-weight: 400;
       color: $clickgui-text-color;
       font-size: 12px;
       overflow: hidden;
@@ -114,7 +114,7 @@
 
     .option {
       color: $clickgui-text-dimmed-color;
-      font-weight: 500;
+      font-weight: 400;
       font-size: 12px;
       padding: 5px 0;
       cursor: pointer;

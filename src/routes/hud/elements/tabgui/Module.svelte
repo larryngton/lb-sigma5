@@ -35,7 +35,7 @@
     @import "../../../../colors.scss";
 
     .module {
-        font-weight: 500;
+        font-weight: 400;
         color: $tabgui-text-dimmed-color;
         font-size: 12px;
         padding: 6px 15px 6px 10px;

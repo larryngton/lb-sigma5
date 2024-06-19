@@ -125,7 +125,7 @@
       color: $clickgui-text-dimmed-color;
       text-align: center;
       font-size: 12px;
-      font-weight: 500;
+      font-weight: 400;
       position: relative;
       padding: 10px;
 

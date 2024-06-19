@@ -88,7 +88,7 @@
     border-radius: 3px;
     cursor: pointer;
     padding: 5px;
-    font-weight: 500;
+    font-weight: 400;
     color: $clickgui-text-color;
     font-size: 12px;
     font-family: "Inter", sans-serif;
@@ -98,7 +98,7 @@
     column-gap: 5px;
 
     .name {
-      font-weight: 500;
+      font-weight: 400;
     }
 
     .none {

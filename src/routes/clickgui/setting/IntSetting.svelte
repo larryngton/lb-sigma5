@@ -76,13 +76,13 @@
     .setting,
     .value {
         color: $clickgui-text-color;
-        font-weight: 500;
+        font-weight: 400;
         font-size: 12px;
     }
 
     .name {
         grid-area: a;
-        font-weight: 500;
+        font-weight: 400;
     }
 
     .value {

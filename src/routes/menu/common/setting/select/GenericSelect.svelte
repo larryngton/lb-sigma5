@@ -73,7 +73,7 @@
     .title {
       color: $menu-text-color;
       font-size: 20px;
-      font-weight: 500;
+      font-weight: 400;
 
       span {
         font-weight: 600;

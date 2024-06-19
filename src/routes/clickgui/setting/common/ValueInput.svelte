@@ -46,7 +46,7 @@
   .value {
     font-family: monospace;
     color: $clickgui-text-color;
-    font-weight: 500;
+    font-weight: 400;
     font-size: 12px;
     background-color: transparent;
     border: none;
