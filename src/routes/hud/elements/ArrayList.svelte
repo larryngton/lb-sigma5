@@ -15,8 +15,8 @@
             .filter((m) => m.enabled && !m.hidden)
             .sort(
                 (a, b) =>
-                    getTextWidth($spaceSeperatedNames ? convertToSpacedString(b.name) : b.name, "500 14px HelveticaNeue") -
-                    getTextWidth($spaceSeperatedNames ? convertToSpacedString(a.name) : a.name, "500 14px HelveticaNeue"),
+                    getTextWidth($spaceSeperatedNames ? convertToSpacedString(b.name) : b.name, "500 14px Arial") -
+                    getTextWidth($spaceSeperatedNames ? convertToSpacedString(a.name) : a.name, "500 14px Arial"),
             );
     }
 
