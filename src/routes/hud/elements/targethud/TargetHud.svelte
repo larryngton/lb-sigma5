@@ -77,7 +77,7 @@
             "a b d"
             "a c d";
         column-gap: 10px;
-        padding: 10px 15px;
+        padding: 10px 10px;
     }
 
     .name {
@@ -85,21 +85,7 @@
         color: $targethud-text-color;
         font-weight: 400;
         align-self: flex-end;
-    }
-
-    .health-stats {
-        grid-area: c;
-        display: flex;
-        column-gap: 10px;
-
-        .stat {
-            .value {
-                color: $targethud-text-dimmed-color;
-                font-size: 14px;
-                min-width: 18px;
-                display: inline-block;
-            }
-        }
+        padding-top: 5px;
     }
 
     .armor-stats {
@@ -108,7 +94,7 @@
         align-items: left;
         column-gap: 10px;
         bottom: 10px;
-        padding-left: 5px;
+        padding-left: 1px;
     }
 
     .avatar {
@@ -120,7 +106,6 @@
         background-image: url("/img/steve.png");
         background-repeat: no-repeat;
         background-size: cover;
-        border-radius: 0px;
         overflow: hidden;
 
         img {

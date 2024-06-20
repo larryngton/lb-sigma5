@@ -17,14 +17,13 @@
         position: relative;
         bottom: 0px;
         left: 0px;
-        border-radius: 0px;
         max-width: 100%;
+        background-color: rgba(black, 0.4);
     }
 
     .thumb {
-        height: 14px;
-        background-color: red;
+        height: 4px;
+        background-color: white;
         transition: ease width 0.5s;
-        border-radius: 0px;
     }
 </style>
