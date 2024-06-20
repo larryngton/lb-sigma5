@@ -55,16 +55,12 @@
     }
 
     .module {
-        //background-color: rgba($arraylist-base-color, 0.05);
         color: $arraylist-text-color;
-        //color: black;
         font-size: 20px;
-        //border-radius: 10px;
         padding: 5px 8px;
-        //border-left: solid 4px $accent-color;
         width: max-content;
         font-weight: 100;
         margin-left: auto;
-        text-shadow: 0px 0px 20px rgba(black, 1);
+        //text-shadow: 0px 0px 20px rgba(black, 1);
     }
 </style>

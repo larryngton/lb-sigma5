@@ -69,6 +69,7 @@
         background-color: rgba($targethud-base-color, 0.68);
         border-radius: 2px;
         overflow: hidden;
+        //box-shadow: 0px 0px 20px rgba(black, 0.5);
     }
 
     .main-wrapper {
