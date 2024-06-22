@@ -35,7 +35,7 @@
                 <img src="{REST_BASE}/api/v1/client/resource/skin?uuid={target.uuid}" alt="avatar" />
             </div>
     
-            <div class="name">{target.username}</div>
+            <div class="name">{target.username} {(Math.floor(((target.actualHealth + target.absorption) / (target.maxHealth + target.absorption)) * 100))}%</div>
 
 
             <div class="armor-stats">
