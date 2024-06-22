@@ -15,8 +15,8 @@
             .filter((m) => m.enabled && !m.hidden)
             .sort(
                 (a, b) =>
-                    getTextWidth($spaceSeperatedNames ? convertToSpacedString(b.name) : b.name, "500 14px Arial") -
-                    getTextWidth($spaceSeperatedNames ? convertToSpacedString(a.name) : a.name, "500 14px Arial"),
+                    getTextWidth($spaceSeperatedNames ? convertToSpacedString(b.name) : b.name, "500 14px JelloLight") -
+                    getTextWidth($spaceSeperatedNames ? convertToSpacedString(a.name) : a.name, "500 14px JelloLight"),
             );
     }
 
@@ -56,11 +56,12 @@
 
     .module {
         color: $arraylist-text-color;
-        font-size: 20px;
-        padding: 5px 8px;
+        font-size: 19px;
+        font-family: "JelloLight";
+        padding: 1px 8px;
         width: max-content;
         font-weight: 100;
         margin-left: auto;
-        //text-shadow: 0px 0px 20px rgba(black, 1);
+        //text-shadow: 0px 0px 20px rgba(black, 0.5);
     }
 </style>
