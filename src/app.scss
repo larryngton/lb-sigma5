@@ -28,6 +28,27 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: "jellomedium";
+    src: url("./assets/font/jellomedium.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "jelloregular";
+    src: url("./assets/font/jelloregular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "JelloLight";
+    src: url("./assets/font/JelloLight.ttf") format("truetype");
+    font-weight: 300;
+    font-style: normal;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
