@@ -4,8 +4,6 @@
     import {getModules} from "../../../integration/rest";
     import {listen} from "../../../integration/ws";
     import {getTextWidth} from "../../../integration/text_measurement";
-    import {flip} from "svelte/animate";
-    import {fly} from "svelte/transition";
     import {convertToSpacedString, spaceSeperatedNames} from "../../../theme/theme_config";
 
     let enabledModules: Module[] = [];
@@ -15,8 +13,8 @@
             .filter((m) => m.enabled && !m.hidden)
             .sort(
                 (a, b) =>
-                    getTextWidth($spaceSeperatedNames ? convertToSpacedString(b.name) : b.name, "500 14px JelloLight") -
-                    getTextWidth($spaceSeperatedNames ? convertToSpacedString(a.name) : a.name, "500 14px JelloLight"),
+                    getTextWidth($spaceSeperatedNames ? convertToSpacedString(b.name) : b.name, "500 14px Arial") -
+                    getTextWidth($spaceSeperatedNames ? convertToSpacedString(a.name) : a.name, "500 14px Arial"),
             );
     }
 
@@ -56,12 +54,12 @@
 
     .module {
         color: $arraylist-text-color;
-        font-size: 19px;
-        font-family: "JelloLight";
-        padding: 1px 8px;
+        font-size: 20px;
+        padding: 4px;
         width: max-content;
         font-weight: 100;
         margin-left: auto;
-        //text-shadow: 0px 0px 20px rgba(black, 0.5);
+        //text-shadow: 0px 0px 20px rgba(black, 1);
+        //background-color: black;
     }
 </style>
