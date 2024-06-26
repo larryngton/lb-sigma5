@@ -12,6 +12,7 @@
     import type {ComponentsUpdateEvent, ScaleFactorChangeEvent} from "../../integration/events";
     import Keystrokes from "./elements/keystrokes/Keystrokes.svelte";
     import TargetHud from "./elements/targethud/TargetHud.svelte";
+    import Taco from "./elements/taco/taco.svelte";
 
     let zoom = 100;
     let components: Component[] = [];
@@ -46,6 +47,8 @@
                     <TargetHud/>
                 {:else if c.name === "Notifications"}
                     <Notifications/>
+                {:else if c.name === "Taco"}
+                    <Taco/>
                 {:else if c.name === "Hotbar"}
                     <HotBar/>
                 {:else if c.name === "Scoreboard"}

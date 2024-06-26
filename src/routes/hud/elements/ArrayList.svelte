@@ -59,7 +59,6 @@
         width: max-content;
         font-weight: 100;
         margin-left: auto;
-        //text-shadow: 0px 0px 20px rgba(black, 1);
-        //background-color: black;
+        text-shadow: 0px 0px 15px rgba(black, 1);
     }
 </style>

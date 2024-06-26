@@ -292,6 +292,36 @@
           ]
         }
       ]
-    }
+    },
+    {
+      "name": "Taco",
+      "value": [
+        {
+          "name": "Enabled",
+          "value": true
+        },
+        {
+          "name": "Alignment",
+          "value": [
+            {
+              "name": "Horizontal",
+              "value": "Left"
+            },
+            {
+              "name": "HorizontalOffset",
+              "value": 0
+            },
+            {
+              "name": "Vertical",
+              "value": "Top"
+            },
+            {
+              "name": "VerticalOffset",
+              "value": 0
+            }
   ]
 }
+      ]
+    }
+  ]
+}   

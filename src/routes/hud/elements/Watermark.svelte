@@ -13,12 +13,13 @@
         font-size: 50px;
         font-weight: 300;
         line-height: 17px;
-        //text-shadow: 0px 0px 20px rgba(black, 0.5);
+        text-shadow: 0px 0px 15px rgba(black, 0.7);
 
         .line2 {
             color: rgba(white, 0.7);
             font-size: 24px;
             font-weight: 300;
+            text-shadow: 0px 0px 15px rgba(black, 0.7);
         }
     }
 </style>
