@@ -25,6 +25,7 @@
     padding-top: 12px;
     padding-bottom: 7px;
     margin-bottom: 10px;
+    box-shadow: 0px 0px 20px rgba(black, 0.6);
   }
 
   .icon {
