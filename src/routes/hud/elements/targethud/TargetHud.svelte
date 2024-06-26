@@ -1,5 +1,4 @@
 <script lang="ts">
-    import ArmorStatus from "./ArmorStatus.svelte";
     import {listen} from "../../../../integration/ws.js";
     import type {PlayerData} from "../../../../integration/types";
     import {REST_BASE} from "../../../../integration/host";
@@ -29,28 +28,15 @@
 </script>
 
 {#if visible && target != null}
-    <div class="targethud" transition:fly={{ y: -10, duration: 200 }}>
+    <div class="targethud">
         <div class="main-wrapper">
             <div class="avatar">
                 <img src="{REST_BASE}/api/v1/client/resource/skin?uuid={target.uuid}" alt="avatar" />
             </div>
     
-            <div class="name">{target.username} {(Math.floor(((target.actualHealth + target.absorption) / (target.maxHealth + target.absorption)) * 100))}%</div>
-
-
-            <div class="armor-stats">
-                {#if target.armorItems[3].count > 0}
-                    <ArmorStatus itemStack={target.armorItems[3]} />
-                {/if}
-                {#if target.armorItems[2].count > 0}
-                    <ArmorStatus itemStack={target.armorItems[2]} />
-                {/if}
-                {#if target.armorItems[1].count > 0}
-                    <ArmorStatus itemStack={target.armorItems[1]} />
-                {/if}
-                {#if target.armorItems[0].count > 0}
-                    <ArmorStatus itemStack={target.armorItems[0]} />
-                {/if}
+            <div class="name">{target.username}</div>
+            <div class="healthpercent">
+                {(Math.floor(((target.actualHealth + target.absorption) / (target.maxHealth + target.absorption)) * 100))}%
             </div>
         </div>    
         
@@ -66,36 +52,40 @@
         //top: 50%;
         left: calc(50% + 5px);
         //transform: translateY(-50%); // overwrites the component transform
-        background-color: rgba($targethud-base-color, 0.68);
-        border-radius: 2px;
+        width: 270px;
+        background: rgba(34,34,34, 0.9);
         overflow: hidden;
-        //box-shadow: 0px 0px 20px rgba(black, 0.5);
+        height: 64px;
+        box-shadow: 0px 0px 20px rgba(black, 0.6);
+         
     }
 
     .main-wrapper {
         display: grid;
         grid-template-areas:
             "a b d"
-            "a c d";
-        column-gap: 10px;
-        padding: 10px 10px;
+            "f c e";
+        padding: 7px;
     }
 
     .name {
-        grid-area: b;
+        grid-area: a;
         color: $targethud-text-color;
         font-weight: 400;
-        align-self: flex-end;
-        padding-top: 5px;
+        align-self: flex-start;
+        padding-left: 58px;
+        padding-top: 9px;
     }
 
-    .armor-stats {
-        grid-area: c;
-        display: flex;
-        align-items: left;
-        column-gap: 10px;
-        bottom: 10px;
-        padding-left: 1px;
+    .healthpercent {
+        grid-area: d;
+        font-weight: 400;
+        color: rgb(125,125,125);
+        z-index: 1;
+        align-self: flex-start;
+        padding-top: 9px;
+        text-align: right;
+        padding-right: 5px;
     }
 
     .avatar {

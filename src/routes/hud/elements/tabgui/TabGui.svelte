@@ -117,7 +117,7 @@
         //top: 90px;
         //left: 15px;
         display: flex;
-        //box-shadow: 0px 0px 20px rgba(black, 0.5);
+        box-shadow: 0px 0px 20px rgba(black, 0.6);
     }
 
     .categories {

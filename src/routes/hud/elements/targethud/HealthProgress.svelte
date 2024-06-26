@@ -15,15 +15,16 @@
 
     .health-progress {
         position: relative;
-        bottom: 0px;
-        left: 0px;
-        max-width: 100%;
-        background-color: rgba(black, 0.4);
+        bottom: 23px;
+        left: 66px;
+        max-width: 72%;
+        background-color: rgba($arraylist-base-color, 0.5);
     }
 
     .thumb {
-        height: 4px;
+        height: 10px;
         background-color: white;
         transition: ease width 0.5s;
-    }
+        z-index: 0;
+    }    
 </style>
