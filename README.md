@@ -1,5 +1,5 @@
-# Kensnoo
+# sigma5 lb nextgen theme
 
-this is a theme made by kencqrson and snooze
+a
 
 #### *its still not done yet*
